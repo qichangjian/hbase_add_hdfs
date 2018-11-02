@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <!-- 指定 hbase 在 HDFS 上存储的路径 -->
+        <name>hbase.rootdir</name>
+        <value>hdfs://bd1807/hbase</value>
+    </property>
+    <property>
+        <!-- 指定 hbase 是分布式的 -->
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+    <property>
+        <!-- 指定 zk 的地址，多个用“,”分割 -->
+        <name>hbase.zookeeper.quorum</name>
+        <value>hadoop1:2181,hadoop2:2181,hadoop3:2181</value>
+    </property>
+</configuration>
